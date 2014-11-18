@@ -1,0 +1,1391 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: epanel\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2009-07-29 01:13+0100\n"
+"PO-Revision-Date: 2014-03-10 14:18+0300\n"
+"Last-Translator: Irkoff <Irkoff@gmail.com>\n"
+"Language-Team:  <4bob@ua.fm>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"Language: ru_UA\n"
+"X-Generator: Poedit 1.6.4\n"
+
+msgid " newcamd.list"
+msgstr " newcamd.list"
+
+msgid "%s  %s  %s (%s free  %s used)"
+msgstr "%s  %s  %s (%s свободно  %s занято)"
+
+msgid "%s  %s  (%03d MB free)\n"
+msgstr "%s  %s  (%03d MB свободно)\n"
+
+msgid "%s  %s  (%d.%03d GB free)\n"
+msgstr "%s  %s  (%d.%03d GB свободно)\n"
+
+msgid "%s downloaded Successfull"
+msgstr "%s завантажено"
+
+msgid "%s downloaded UnSuccessfull"
+msgstr "%s не завантажено"
+
+msgid "%s hours"
+msgstr "%s час."
+
+msgid "%s is UnInstalled"
+msgstr "%s видалено"
+
+msgid "%s is downloaded"
+msgstr "%s завантажено"
+
+msgid "%s is installed"
+msgstr "%s встановлено"
+
+msgid "%s min"
+msgstr "%s хв"
+
+msgid "%s.gz created in /tmp"
+msgstr "%s.gz створений в /tmp"
+
+msgid "*.tar.gz & *.bh.tgz & *.ipk removed"
+msgstr "*.tar.gz, *.bh.tgz, *.ipk видалені"
+
+msgid "120 min"
+msgstr "120 хв"
+
+msgid "180 min"
+msgstr "180 хв"
+
+msgid "240 min"
+msgstr "240 хв"
+
+msgid "30 min"
+msgstr "30 хв"
+
+msgid "60 min"
+msgstr "60 хв"
+
+msgid "Active Profile:"
+msgstr "Активний Профіль:"
+
+msgid "Active SoftCam:"
+msgstr "Активний SoftCam:"
+
+msgid "Close"
+msgstr "Закрити"
+
+msgid "yes"
+msgstr "Так"
+
+msgid "no"
+msgstr "Ні"
+
+msgid "not confirmed"
+msgstr "Немає підтвердження"
+
+msgid "add tabs - %s"
+msgstr "Додати завдання - %s"
+
+msgid "Adv. UnInstall"
+msgstr "Продв. видалення"
+
+msgid "Allready running %s"
+msgstr "Вже запущено %s"
+
+msgid "AutoDownload time"
+msgstr "Час автозавантаження"
+
+msgid "AutoDownload weekday"
+msgstr "День тижня автозавантаження"
+
+msgid "Autobackup to ../epgtmp.gz"
+msgstr "Автоматичне збереження в ../epgtmp.gz"
+
+msgid "Automatic save/load EPG"
+msgstr "Автоматичне збереження і завантаження EPG"
+
+msgid "Check if epg.dat exists"
+msgstr "Перевіряти наявність epg.dat"
+
+msgid "Wicardd configpath"
+msgstr "Wicardd щлях до конфігурації"
+
+msgid "Mgcamd configfile extention"
+msgstr "Mgcamd розширення файлу конфігурації"
+
+msgid "Wicardd config filename"
+msgstr "Wicardd ім'я основного файлу конфігурації"
+
+msgid "BackUp"
+msgstr "Зберегти"
+
+msgid "Crashlog viewer"
+msgstr "Переглядач файлів крешлогу"
+
+msgid "Add own biss in keyfile"
+msgstr "Додавати власний файл ключів"
+
+msgid "Angola"
+msgstr "Ангола"
+
+msgid "Apply the new System time?"
+msgstr "Застосувати новий системний час?"
+
+msgid "Applying"
+msgstr "Застосовуємо"
+
+msgid "Apr."
+msgstr "Апр."
+
+msgid "Argentina"
+msgstr "Аргентина"
+
+msgid "Aug."
+msgstr "Авг."
+
+msgid "Australia"
+msgstr "Австралія"
+
+msgid "Austria"
+msgstr "Австрія"
+
+msgid "AutoDownload epg.dat"
+msgstr "Автозавантаження epg.dat"
+
+msgid "Bahamas"
+msgstr "Багами"
+
+msgid "Bangladesh"
+msgstr "Бангладеш"
+
+msgid "Belarus"
+msgstr "Білорусь"
+
+msgid "Belgium"
+msgstr "Бельгія"
+
+msgid "Brazil"
+msgstr "Бразилія"
+
+msgid "Bulgaria"
+msgstr "Болгарія"
+
+msgid "Canada"
+msgstr "Канада"
+
+msgid "Cardserver:"
+msgstr "Кардсервер:"
+
+msgid "Change system time was canceled, because %s"
+msgstr "Системний час не змінено, так як%s"
+
+msgid "Changelog"
+msgstr "Зміни"
+
+msgid "Check your internet connection"
+msgstr "Перевірте інтернет-з'єднання"
+
+msgid "Check your system and reboot"
+msgstr "Перезавантажте систему"
+
+msgid "Chile"
+msgstr "Чилі"
+
+msgid "China"
+msgstr "Китай"
+
+msgid "Clear /tmp"
+msgstr "Очищення /tmp"
+
+msgid "Command"
+msgstr "Завдання"
+
+msgid "Config"
+msgstr "Конфігурація"
+
+msgid "Config script Executer"
+msgstr "Конфігурація скрипт менеджера"
+
+msgid "Cron Manager"
+msgstr "Управління Cron"
+
+msgid "CtronTab Manager - %s"
+msgstr "Управління Cron - %s"
+
+msgid "Czech Republic"
+msgstr "Чехія"
+
+msgid "Day of month"
+msgstr "Число"
+
+msgid "Day of week"
+msgstr "День тижня"
+
+msgid "Dec."
+msgstr "Груд."
+
+msgid "Denmark"
+msgstr "Данія"
+
+msgid "Devices:"
+msgstr "Пристрої:"
+
+msgid "Download -deps"
+msgstr "Завантаження -deps"
+
+msgid "Download -nodeps"
+msgstr "Завантаження -nodeps"
+
+msgid "Download EPG"
+msgstr "Завантаження EPG"
+
+msgid "Download EPG from  linux-sat.tv (exUSSR)"
+msgstr "Завантаження EPG з linux-sat.tv (ex-USSR)"
+
+msgid "Download extensions from feed"
+msgstr "Завантаження плагінів"
+
+msgid "Driver Version:"
+msgstr "Версія драйвера:"
+
+msgid "E-Crashlog viewer"
+msgstr "E-Панель перегляд крешлога"
+
+msgid "E-Installer"
+msgstr "E-Панель інсталятор"
+
+msgid "E-Ipk Installer"
+msgstr "E-Панель .ipk інсталятор"
+
+msgid "E-Newcamd.list switcher"
+msgstr "E-Панель newcamd.list перемикач"
+
+msgid "E-Panel"
+msgstr "E-Панель"
+
+msgid "E-Panel Config"
+msgstr "Конфігурація E-Панелі"
+
+msgid "E-Panel Menu/Extensionmenu config"
+msgstr "Конфігурація меню/розширене меню"
+
+msgid "E-Panel for OpenPli"
+msgstr "E-Панель"
+
+msgid "E-Panel for OpenPli Ver:"
+msgstr "Е-Панель для OpenPli Вер."
+
+msgid "E-Panel for Pli"
+msgstr "E-Пaнель"
+
+msgid "E-Reload epg.dat"
+msgstr "E-Панель перезавантаження epg.dat"
+
+msgid "E-Script Executer"
+msgstr "E-Панель скрипт менеджер"
+
+msgid "E-SoftCam manager"
+msgstr "E-Панель Емулятори"
+
+msgid "E-Tar.gz Installer"
+msgstr "E-Панель tar.gz інсталятор"
+
+msgid "E-Unmount USB"
+msgstr "E-Панель демонтування USB"
+
+msgid "E-Wicardd.conf switcher"
+msgstr "E-Панель wicardd.conf перемикач"
+
+msgid "EPG Downloader"
+msgstr "Завантажувач EPG"
+
+msgid "EPG downloaded"
+msgstr "EPG завантажений"
+
+msgid "EPG from linux-sat.tv/piconload.ru (exUSSR)"
+msgstr "Завантажувач EPG"
+
+msgid "Error dowload CardServer list"
+msgstr "Помилка завантаження списку кардсерверу"
+
+msgid "Error dowload SoftCam list"
+msgstr "Помилка завантаження списку емуляторів"
+
+msgid "Error list ipk aviable"
+msgstr "Помилка створення списку .ipk пакетів"
+
+msgid "Ukrainian"
+msgstr "Українська"
+
+msgid "Estonia"
+msgstr "Эстонія"
+
+msgid "Every"
+msgstr "Кожен період"
+
+msgid "Failed remove"
+msgstr "Помилка видалення"
+
+msgid "Feb."
+msgstr "Лют."
+
+msgid "Filter by Name in download extentions"
+msgstr "Фільтр імен в меню завантаження розширень"
+
+msgid "Finland"
+msgstr "Фінляндія"
+
+msgid "Flash:"
+msgstr "Осн. память:"
+
+msgid "Forced Install"
+msgstr "Примусова установка"
+
+msgid "Fr"
+msgstr "Пт"
+
+msgid "France"
+msgstr "Франція"
+
+msgid "Germany"
+msgstr "Германія"
+
+msgid "Greece"
+msgstr "Греція"
+
+msgid "Guatemala"
+msgstr "Гватемала"
+
+msgid "HDD go sleep"
+msgstr "HDD зупинений"
+
+msgid "HDD sleep"
+msgstr "Стоп HDD"
+
+msgid "Hardware:"
+msgstr "Пристрій:"
+
+msgid "Hong Kong"
+msgstr "Гонконг"
+
+msgid "Hour"
+msgstr "Годинник"
+
+msgid "Hungary"
+msgstr "Угорщина"
+
+msgid "IPK Tools"
+msgstr "Ручна установка і видалення пакетів"
+
+msgid "Image:"
+msgstr "Імідж:"
+
+msgid "India"
+msgstr "Индія"
+
+msgid "Indonesia"
+msgstr "Індонезія"
+
+msgid "Insatall extensions from feed"
+msgstr "Інсталяція розширень з фіду"
+
+msgid "Install & Remove Plugins, Addons, Softcams"
+msgstr "Інсталяція і видалення плагінів, доповнень, емуляторів"
+
+msgid "Install All"
+msgstr "Інсталювати все"
+
+msgid "Install packets"
+msgstr "Інсталяція пакетів"
+
+msgid "Install tar.gz, bh.tgz, nab.tgz"
+msgstr "Інсталяція tar.gz, bh.tgz, nab.tgz"
+
+msgid "Ipk remove"
+msgstr "Видалення .ipk пакетів"
+
+msgid "Iran"
+msgstr "Іран"
+
+msgid "Ireland"
+msgstr "Ірландія"
+
+msgid "Is a time-based job scheduler"
+msgstr "Планувальник завдань за розкладом"
+
+msgid "Italy"
+msgstr "Італія"
+
+msgid "Jan."
+msgstr "Січ."
+
+msgid "Japan"
+msgstr "Японія"
+
+msgid "Jul."
+msgstr "Липень"
+
+msgid "Jul"
+msgstr "Липень"
+
+msgid "Jun."
+msgstr "Червень"
+
+msgid "Jun"
+msgstr "Червень"
+
+msgid "Kazakhstan"
+msgstr "Казахстан"
+
+msgid "Kernel Modules Manager"
+msgstr "Управління драйверами"
+
+msgid "Kernel Version:"
+msgstr "Версія ядра:"
+
+msgid "Korea"
+msgstr "Корея"
+
+msgid "Last Upgrade:"
+msgstr "Оновлення:"
+
+msgid "Latvia"
+msgstr "Латвія"
+
+msgid "Lithuania"
+msgstr "Литва"
+
+msgid "Load/UnLoad"
+msgstr "Вкл./Відкл."
+
+msgid "Loaded %s.ko"
+msgstr "Завантажений %s.ko"
+
+msgid "LsMod"
+msgstr "Драйвери"
+
+msgid "Luxembourg"
+msgstr "Люксембург"
+
+msgid "Macedonia"
+msgstr "Македонія"
+
+msgid "Madagascar"
+msgstr "Мадагаскар"
+
+msgid "Make swap"
+msgstr "Створити файл підкачки"
+
+msgid "Make swap on %s (128MB)"
+msgstr "Створити файл підкачки на %s (128MB)"
+
+msgid "Make swap on %s (256MB)"
+msgstr "Створити файл підкачки на %s (256MB)"
+
+msgid "Make swap on %s (512MB)"
+msgstr "Створити файл підкачки на %s (512MB)"
+
+msgid "Malaysia"
+msgstr "Малайзія"
+
+msgid "Manage BusyBox-Cron service"
+msgstr "Управління сервісом BusyBox-Cron"
+
+msgid "Manage Dropbear SSH service"
+msgstr "Управління сервісом Dropbear SSH"
+
+msgid "Manage Ftp service"
+msgstr "Управління сервісом Ftp"
+
+msgid "Manage Internet superserver (inetd)"
+msgstr "Управління суперсервером Інтернет (inetd)"
+
+msgid "Manage Networking service"
+msgstr "Управління сервісом Network"
+
+msgid "Manage Samba service"
+msgstr "Управління сервісом Samba"
+
+msgid "Manage Swap"
+msgstr "Управління файлом підкачки "
+
+msgid "Manage Swap on %s"
+msgstr "Управління файлом підкачки на %s"
+
+msgid "Manage Syslog/klogd service"
+msgstr "Управління сервісом Syslog/klogd"
+
+msgid "Manage epg, ntp, unmount, script, info ..."
+msgstr "Синхронізація часу, EPG, скрипти, інфо ..."
+
+msgid "Manual"
+msgstr "Вручну"
+
+msgid "Manual Installer/Uninstaller"
+msgstr "Ручна установка і видалення пакетів"
+
+msgid "Mar."
+msgstr "Березень"
+
+msgid "May"
+msgstr "Травень"
+
+msgid "Memory:"
+msgstr "Пам'ять:"
+
+msgid "Mexico"
+msgstr "Мексика"
+
+msgid "MgCamd Restarted"
+msgstr "MgCamd перезапущений"
+
+msgid "Min"
+msgstr "Хвилини"
+
+msgid "Mo"
+msgstr "Пн"
+
+msgid "Moldova"
+msgstr "Молдова"
+
+msgid "Month"
+msgstr "Місяць"
+
+msgid "Name of keyfile"
+msgstr "Назва файлу ключів"
+
+msgid "Netherlands"
+msgstr "Голландія"
+
+msgid "New Zealand"
+msgstr "Нова Зеландія"
+
+msgid "Norway"
+msgstr "Норвегія"
+
+msgid "Not Active"
+msgstr "Не активний"
+
+msgid "Not Installed"
+msgstr "Не встановлений"
+
+msgid "Nov."
+msgstr "Листопад"
+
+msgid "NtpTime Updater"
+msgstr "Синхронізація часу"
+
+msgid "Oct."
+msgstr "Жовтень"
+
+msgid "Pakistan"
+msgstr "Пакістан"
+
+msgid "Panama"
+msgstr "Панама"
+
+msgid "Patch enigma2.sh (need restart enigma2)"
+msgstr "Правка enigma2.sh (потрібне перезавантаження enigma2)"
+
+msgid "Path to save keyfile"
+msgstr "Шлях збереження файлу ключів"
+
+msgid "Philippines"
+msgstr "Філіппіни"
+
+msgid "Please wait, restarting %s"
+msgstr "Чекайте, перезапускається %s"
+
+msgid "Please wait, starting %s"
+msgstr "Чекайте, запускається %s"
+
+msgid "Please wait, stoping softcam or cardserver"
+msgstr "Чекайте, зупиняється емулятор чи кардсервер"
+
+msgid "Poland"
+msgstr "Польща"
+
+msgid "Port(s) (single  xxxxx or range xxxxx:xxxxx)"
+msgstr "Порт(и) (одиночний  xxxxx або діапазон xxxxx:xxxxx)"
+
+msgid "Portugal"
+msgstr "Португалія"
+
+msgid "ReStart"
+msgstr "Перезапуск"
+
+msgid "ReStart Both"
+msgstr "Перезапуск"
+
+msgid "Reload epg.dat"
+msgstr "Перезав. epg.dat"
+
+msgid "Remove All"
+msgstr "Видалити все"
+
+msgid "Remove swap"
+msgstr "Видалити файл підкачки"
+
+msgid "Remove swap on %s (%s)"
+msgstr "Видалити файл підкачки на %s (%s)"
+
+msgid "Remove tabs"
+msgstr "Видалити завдання"
+
+msgid "Removed %s"
+msgstr "Видалено %s"
+
+msgid "Removed All Crashlog Files"
+msgstr "Всі файли видалені"
+
+msgid "Restart GUI"
+msgstr "Перезапуск Enigma"
+
+msgid "Restart MgCamd"
+msgstr "Перезапуск MgCamd"
+
+msgid "Restart Softcam"
+msgstr "Перезапуск Емулятора"
+
+msgid "Restarting %s service"
+msgstr "Перезапуск сервіса %s"
+
+msgid "Restarting ..."
+msgstr "Перезапуск ..."
+
+msgid "Restore epg.dat"
+msgstr "Відновити epg.dat"
+
+msgid "Romania"
+msgstr "Румунія"
+
+msgid "Russian Federation"
+msgstr "Російська Федерація"
+
+msgid "Sa"
+msgstr "Сб"
+
+msgid "Save epg.dat"
+msgstr "Зберегти epg.dat"
+
+msgid "Saved"
+msgstr "Збережено"
+
+msgid "Script Executer"
+msgstr "Скрипти користувача"
+
+msgid "Scripts"
+msgstr "Скрипти"
+
+msgid "Select EPG language"
+msgstr "Вибір мови EPG"
+
+msgid "Select SoftCam or CardServer: - %s"
+msgstr "Виберіть Емулятор: - %s"
+
+msgid "Select install files"
+msgstr "Виберіть пакети для інсталяції"
+
+msgid "Select path to save epg.dat"
+msgstr "Вибір шляху збереження epg.dat"
+
+msgid "Sep."
+msgstr "Вер."
+
+msgid "Server (ip or name)"
+msgstr "Сервер (ip-адрес або ім'я)"
+
+msgid "Service Manager"
+msgstr "Управління сервісами"
+
+msgid "Service Tools"
+msgstr "Сервісні утиліти"
+
+msgid "Set Transponder time update"
+msgstr "Синхронізувати час з транспондера"
+
+msgid "Set choice server mode"
+msgstr "Встановіть спосіб вибору сервера"
+
+msgid "Set manual ntp server address"
+msgstr "Введіть адресу ntp сервера"
+
+msgid "Set script path"
+msgstr "Встановіть директорію"
+
+msgid "Set time to update"
+msgstr "Встановити період оновлення"
+
+msgid "Set your country"
+msgstr "Встановіть місцерозташування"
+
+msgid "Show E-CrashLog viewr in ExtensionMenu"
+msgstr "Показати перегляд крешлога в розширеному меню"
+
+msgid "Show E-Installer in ExtensionMenu"
+msgstr "Показати E-Інсталятор в розширеному меню"
+
+msgid "Show E-NewCamd.list switcher in ExtensionMenu"
+msgstr "Показати newcamd.list перемикач у розширеному меню"
+
+msgid "Show E-Panel in ExtensionMenu"
+msgstr "Показати E-Панель в розширеному меню"
+
+msgid "Show E-Panel in MainMenu"
+msgstr "Показати E-Панель в основному меню"
+
+msgid "Show E-Script Executter in ExtensionMenu"
+msgstr "Показати скрипт менеджер в розширеному меню"
+
+msgid "Show E-SoftCam manager in ExtensionMenu"
+msgstr "Показати емулятори в розширеному меню"
+
+msgid "Show E-Usb Unmount in ExtensionMenu"
+msgstr "Показати демонтування USB в розширеному меню"
+
+msgid "Show E-Wicardd.conf switcher in ExtensionMenu"
+msgstr "Показати wicardd.conf перемикач в розширеному меню"
+
+msgid "Show PluginBrowser in E-Panel MainMenu"
+msgstr "Показати Плагіни в меню Е-Панелі"
+
+msgid "Show reload epg.dat in ExtensionMenu"
+msgstr "Показати перезавантаження epg.dat в розширеному меню"
+
+msgid "Simple Cardserver"
+msgstr "Управління кардсервером"
+
+msgid "Simple Softcam"
+msgstr "Управління Емуляторами"
+
+msgid "Simple Softcam/Cardserver"
+msgstr "Управління Емуляторами і Кардсервером"
+
+msgid "Singapore"
+msgstr "Сингапур"
+
+msgid "Slovakia"
+msgstr "Словаччина"
+
+msgid "Slovenia"
+msgstr "Словенія"
+
+msgid "SoftCam.Key Updater"
+msgstr "Завантажувач SoftCam.Key"
+
+msgid "SoftCam/CardServer Panel"
+msgstr "Панель управління емуляторами і кардсервером"
+
+msgid "Softcam"
+msgstr "Емулятор"
+
+msgid "Softcam Restarted"
+msgstr "Емулятор перезавантажений"
+
+msgid "Softcam:"
+msgstr "Емулятор:"
+
+msgid "Sorry, the EPG download error"
+msgstr "Вибачте, помилка завантаження EPG"
+
+msgid "South Africa"
+msgstr "Південна Африка"
+
+msgid "Spain"
+msgstr "Іспанія"
+
+msgid "Start"
+msgstr "Старт"
+
+msgid "Start Samba"
+msgstr "Старт Samba"
+
+msgid "Start scripts from /usr/script"
+msgstr "Запуск скриптів із /usr/script"
+
+msgid "Start, Stop, Create, Remove Swap file"
+msgstr "Запуск, зупинка, створення, видалення файлу підкачки"
+
+msgid "Start, Stop, Restart Cardserver"
+msgstr "Запуск, зупинка і перезапуск кардсервера"
+
+msgid "Start, Stop, Restart Sofcam"
+msgstr "Запуск, зупинка і перезапуск емулятора"
+
+msgid "Start, Stop, Restart Sofcam/Cardserver"
+msgstr "Запуск, зупинка і перезапуск емуляторів і кардсерверів"
+
+msgid "Start, Stop, Restart system services"
+msgstr "Запуск, зупинка, перезапуск системних сервісів"
+
+msgid "StartUp synchronization"
+msgstr "Синхронізувати час при старті системи"
+
+msgid "Starting %s service"
+msgstr "Запуск сервісу %s"
+
+msgid "Status:"
+msgstr "Статус:"
+
+msgid "Stoping %s service"
+msgstr "Зупинка сервісу %s"
+
+msgid "Su"
+msgstr "Неділя"
+
+msgid "Swap file created"
+msgstr "Файл підкачки створений"
+
+msgid "Swap file removed"
+msgstr "Файл підкачки видалений"
+
+msgid "Swap file started"
+msgstr "Файл підкачки запущено"
+
+msgid "Swap file stoped"
+msgstr "Файл підкачки зупинений"
+
+msgid "Swap off"
+msgstr "Відключити файл підкачки"
+
+msgid "Swap on"
+msgstr "Включити файл підкачки"
+
+msgid "Swap on %s off (%s)"
+msgstr "Відключити файл підкачки на %s (%s)"
+
+msgid "Swap on %s on (%s)"
+msgstr "Включити файл підкачки на %s (%s)"
+
+msgid "Swap on USB/HDD"
+msgstr "Управління файлом підкачки"
+
+msgid "Swap:"
+msgstr "Підкачка:"
+
+msgid "Sweden"
+msgstr "Швеція"
+
+msgid "Switch newcamd.list with remote conrol"
+msgstr "Ручне перемикання newcamd.list"
+
+msgid "Switch wicardd.conf with remote conrol"
+msgstr "Ручне перемикання wiccard.conf"
+
+msgid "Switzerland"
+msgstr "Швейцарія"
+
+msgid "Azerbaidjan"
+msgstr "Азербайджан"
+
+msgid "Synchronization NTP"
+msgstr "Синхронізація часу"
+
+msgid "Synchronization NTP time"
+msgstr "Синхронізація часу через інтернет"
+
+msgid "Synchronization Now"
+msgstr "Синхронізую"
+
+msgid "Synchronization activated"
+msgstr "Синхронізація увімкнена"
+
+msgid "Synchronization ntp every 30 min,60 min,120 min, 240 min and Now"
+msgstr "Синхронізація часу відразу і кожні 30, 60, 120, 240 хв."
+
+msgid "Synchronized"
+msgstr "Синхронізовано"
+
+msgid "System Info"
+msgstr "Системна інформація"
+
+msgid "System Tools"
+msgstr "Системні утиліти"
+
+msgid "System info"
+msgstr "Системна інформація"
+
+msgid "Taiwan"
+msgstr "Тайвань"
+
+msgid "Tanzania"
+msgstr "Танзанія"
+
+msgid "Th"
+msgstr "Чт"
+
+msgid "Thailand"
+msgstr "Тайланд"
+
+msgid "Tools"
+msgstr "Утиліти"
+
+msgid "Total: %s Kb  Free: %s Kb"
+msgstr "Всього: %s Kb  Вільно: %s Kb"
+
+msgid "Tu"
+msgstr "Вівторок"
+
+msgid "Turkey"
+msgstr "Турція"
+
+msgid "Ukraine"
+msgstr "Україна"
+
+msgid "UnInstall"
+msgstr "Видалення"
+
+msgid "UnInstall Ipk"
+msgstr "Видалення .ipk пакетів"
+
+msgid "UnLoaded %s.ko"
+msgstr "%s.ko не завантажений"
+
+msgid "UnMount"
+msgstr "Демонтувати"
+
+msgid "UnMount USB"
+msgstr "Демонтувати USB"
+
+msgid "UnSuccessfull"
+msgstr "Не виконано"
+
+msgid "United Arab Emirates"
+msgstr "Об'єднані Арабські Емірати"
+
+msgid "United Kingdom"
+msgstr "Великобританія"
+
+msgid "United States"
+msgstr "США"
+
+msgid "Unmount manager"
+msgstr "Демонтування USB"
+
+msgid "Unmount usb devices"
+msgstr "Вилучення пристроїв USB"
+
+msgid "Unmounted %s"
+msgstr "Демонтовано %s"
+
+msgid "Unmounted %s Unsucessfull"
+msgstr "Демонтування USB не виконане"
+
+msgid "Update Now"
+msgstr "Синхронізувати "
+
+msgid "User Scripts"
+msgstr "Скрипти користувача "
+
+msgid "Uzbekistan"
+msgstr "Узбекістан"
+
+msgid "Vietnam"
+msgstr "В'єтнам"
+
+msgid "View"
+msgstr "Переглянути"
+
+msgid "View System Settings (/etc/enigma2/settings)"
+msgstr "Перегляд Установок системи (/etc/enigma2/settings)"
+
+msgid "View or Remove Crashlog files"
+msgstr "Переглядач файлів крешлога"
+
+msgid "View settings"
+msgstr "Перегляд установок"
+
+msgid "We"
+msgstr "Середа"
+
+msgid "bad day %s"
+msgstr "Некоректно введений день місяця %s"
+
+msgid "bad format"
+msgstr "некоректний формат"
+
+msgid "bad hour %s"
+msgstr "некоректно введені годинник %s"
+
+msgid "bad minute %s"
+msgstr "некоректно введені хвилини %s"
+
+msgid "bad month %s"
+msgstr "некоректно введений місяць %s"
+
+msgid "bad year %s"
+msgstr "некоректно введений рік %s"
+
+msgid "clear /tmp"
+msgstr "Очистка /tmp"
+
+msgid "config menu and extentionsmenu for E-Panel items"
+msgstr "Конфігурація меню і розширеного меню E-Панелі"
+
+msgid "configuration is saved"
+msgstr "Конфігурація збережена"
+
+msgid "dowmload extensions from feed"
+msgstr "Завантаження розширень з сервера іміджу"
+
+msgid "download extensions"
+msgstr "Завантаження розширень"
+
+msgid "download from: %s"
+msgstr "Завантажити з: %s"
+
+msgid "ecm.info Viewer"
+msgstr "Переглядач ecm.info"
+
+msgid "ecm.info file viewer"
+msgstr "Перегляд файла ecm.info"
+
+msgid "ecm.info viewer"
+msgstr "Переглядач ecm.info"
+
+msgid "epg.dat reloaded"
+msgstr "epg.dat перазавантажений"
+
+msgid "epg.dat restored"
+msgstr "epg.dat відновлений"
+
+msgid "epg.dat saved"
+msgstr "epg.dat збережений"
+
+msgid "install & forced install ipk, bh.tgz, tar.gz, nab.tgz from /tmp"
+msgstr "Інсталяція і примусова інсталяція ipk, bh.tgz, tar.gz, nab.tgz из /tmp"
+
+msgid "install & remove ipk, tar.gz, bh.tgz packets"
+msgstr "Інсталяція і видалення .ipk, .tar.gz, .bh.tgz, .nab.tgz пакетов"
+
+msgid "install extensions"
+msgstr "Інсталяція додатків"
+
+msgid "install extensions from feed"
+msgstr "Інсталяція додатків з сервера іміджу"
+
+msgid "install/uninstall local .ipk & .tar.gz files from /tmp"
+msgstr "Локальна інсталяція і видалення пакетів из /tmp"
+
+msgid "ipk packets remover"
+msgstr "Видалення .ipk пакетів"
+
+msgid "ipk packets, bh.tgz, tar.gz, nab.tgz installer"
+msgstr "Інсталяція ipk bh.tgz, tar.gz, nab.tgz"
+
+msgid "kernel modules manager, manage swap, ftp, samba, unmount USB"
+msgstr "Управління драйверами, Ftp, Samba, Cron, Swap, демонтування USB"
+
+msgid "load & unload kernel modules"
+msgstr "Завантаження і видалення драйверів"
+
+msgid "login"
+msgstr "Логін"
+
+msgid "new time not available"
+msgstr "новий час не введено"
+
+msgid "newcamd.list Editor"
+msgstr "Редактор newcamd.list "
+
+msgid "newcamd.list Switcher"
+msgstr "Перемикач newcamd.list "
+
+msgid "newcamd.list Switcher: - %s"
+msgstr "Перемикач newcamd.list: - %s"
+
+msgid "newcamd.list editor"
+msgstr "Редактор newcamd.list"
+
+msgid "press OK to enable/disable server"
+msgstr "Натисніть OK для включення / відключення сервера"
+
+msgid "quick newcamd.list editor"
+msgstr "Швидке редагування newcamd.list"
+
+msgid "reFresh"
+msgstr "Оновити"
+
+msgid "reload epg.dat failed"
+msgstr "Помилка перезавантаження epg.dat"
+
+msgid "remove & advanced remove ipk packets"
+msgstr "Видалення і просунуте видалення .ipk пакетов"
+
+msgid "remove *.ipk & *.tar.gz & *.bh.tgz & *.nab.tgz from /tmp"
+msgstr "Очищення /tmp, видалення *.ipk, *.tar.gz, *.bh.tgz и *.nab.tgz"
+
+msgid "remove *.ipk & *.tar.gz from /tmp"
+msgstr "Видалення *.ipk и *.tar.gz пакетов из /tmp"
+
+msgid "running"
+msgstr "Працює"
+
+msgid "server: %s"
+msgstr "Сервер: %s"
+
+msgid "simple tools for Pli image"
+msgstr "Панель керування, утиліти, інструменти"
+
+msgid "size: %s  %s"
+msgstr "Розмір: %s  %s"
+
+msgid "stopping"
+msgstr "Зупинений"
+
+msgid "system info (free, dh -f, hosts)"
+msgstr "Системна інформація (free, dh -f, hosts)"
+
+msgid "update Softcam.key from internet"
+msgstr "Завантаження SoftCam.Key з інтернету"
+
+msgid "update time from internet"
+msgstr "Синхронізувати час через інтернет"
+
+msgid "view & remove crashlog files"
+msgstr "Перегляд і видалення файлів крешлога"
+
+msgid "view system settings"
+msgstr "перегляд установок системи"
+
+msgid "SoftCam.Key server"
+msgstr "SoftCam.Key сервер"
+
+msgid "%s Switcher: - %s"
+msgstr "%s перемикач: - %s"
+
+msgid "Mgcamd config switcher"
+msgstr "Mgcamd перемикач"
+
+msgid "Mgcamd configpath"
+msgstr "Mgcamd шлях до конфігурації"
+
+msgid "Mgcamd config filename"
+msgstr "Mgcamd ім'я основного файлу конфігурації"
+
+msgid "Wicardd config switcher"
+msgstr "Wicardd перемикач"
+
+msgid "Wicardd configfile extention"
+msgstr "Wicardd розширення файлу конфігурації"
+
+msgid "Oscam config switcher"
+msgstr "Oscam перемикач"
+
+msgid "CCcam config switcher"
+msgstr "CCсam перемикач"
+
+msgid "CCcam configpath"
+msgstr "CCсam шлях до конфігурації"
+
+msgid "CCcam config filename"
+msgstr "CCсam ім'я основного файлу конфігурації"
+
+msgid "CCcam configfile extention"
+msgstr "CCсam розширення файлу конфігурації"
+
+msgid "Oscam configpath"
+msgstr "Oscam шлях до конфігурації"
+
+msgid "Oscam config filename"
+msgstr "Oscam ім'я основного файлу конфігурації"
+
+msgid "Oscam configfile extention"
+msgstr "Oscam розширення файлу конфігурації"
+
+msgid "E-Oscam.conf switcher"
+msgstr "E-Панель oscam.conf перемикач"
+
+msgid "E-CCcam.Cfg switcher"
+msgstr "E-Панель CCcam.Cfg перемикач"
+
+msgid "Universal Switcher"
+msgstr "Універсальний перемикач"
+
+msgid "switch config files mgcamd, oscam, wicardd, cccam with remote conrol"
+msgstr "Перемикач конфігурацій mgcamd, oscam, wicardd, cccam"
+
+msgid "Swap Manager"
+msgstr "Управління файлом підкачки"
+
+msgid "Switcher"
+msgstr "Перемикач"
+
+msgid "E-EPG Downloader"
+msgstr "E-EPG Завантажувач"
+
+msgid "Show E-EPG Downloader in ExtensionMenu"
+msgstr "Показати завантажувач EPG в розширеному меню"
+
+msgid "Zram swap is on"
+msgstr "Zram файл підкачки включений"
+
+msgid "press Close for Exit"
+msgstr "натисніть Закрити для виходу"
+
+msgid "Update to plugin list"
+msgstr "Оновлення списку плагінів"
+
+msgid "E-Installer: User directory on mount device"
+msgstr "E-Інсталятор: Директорія на монтованих дисках"
+
+msgid "E-Installer: Selection mode"
+msgstr "E-Інсталятор: Режим"
+
+msgid "Multi files"
+msgstr "Багатофайловий"
+
+msgid "Single file"
+msgstr "Одинарний"
+
+msgid "MultiSelect Mode"
+msgstr "Багатофайловий режим"
+
+msgid "SingleSelect Mode"
+msgstr "Одинарний режим"
+
+msgid "Failure..."
+msgstr "Помилка..."
+
+msgid "Please wait, downloading epg.dat"
+msgstr "Очікуйте, завантажується epg.dat"
+
+msgid "Select source epg.dat"
+msgstr "Вибір джерела завантаження epg.dat"
+
+msgid "Crashlog viewer path"
+msgstr "Вибір шляху для перегляду крешлога"
+
+msgid "Add tabs"
+msgstr "Додати"
+
+msgid "Please wait"
+msgstr "Очікуйте..."
+
+msgid "E-script path"
+msgstr "Вибір шляху для скриптів"
+
+msgid "set of utilities for enigma2"
+msgstr "набір утиліт для enigma2"
+
+msgid "Donwloading epg.dat from %s"
+msgstr "Завантажуеться epg.dat з %s"
+
+msgid "Stoping..."
+msgstr "Зупиняємо..."
+
+msgid "Removing startscript..."
+msgstr "Видаляєм скрипт старту..."
+
+msgid "Removing ecm.info..."
+msgstr "Видаляєм ecm.info..."
+
+msgid "Adding startscript..."
+msgstr "Додаєм скрипт старту..."
+
+msgid "Starting..."
+msgstr "Стартуємо...."
+
+msgid "Restarting..."
+msgstr "Рестарт..."
+
+msgid "Creating None script..."
+msgstr "Створюємо None-скрипт..."
+
+msgid "synchronizing..."
+msgstr "синхронізуємо..."
+
+msgid "Hosts editor"
+msgstr "Редактор hosts"
+
+msgid "add/remove records in /etc/hosts"
+msgstr "додати/видалити запис в /etc/hosts"
+
+msgid "Add record"
+msgstr "Додати"
+
+msgid "Remove record"
+msgstr "Видалити"
+
+msgid "ip address"
+msgstr "ip адрес"
+
+msgid "host name"
+msgstr "ім'я"
+
+msgid "alias"
+msgstr "сіноним"
+
+msgid "add record"
+msgstr "додати"
+
+msgid "/etc/hosts editor"
+msgstr "/etc/hosts редактор"
+
+msgid "Success..."
+msgstr "Успішно..."
+
+msgid "Restore EPG with enigma2 start"
+msgstr "Відновити EPG після завантаження enigma2"
+
+msgid "Manage UdPrxy service"
+msgstr "Управління сервісом UdPrxy"
+
+msgid "Manage Livestreamer service"
+msgstr "Управління сервісом Livestreamer"
+
+msgid "Creating..."
+msgstr "Створюємо..."
+
+msgid "%s loaded in memory"
+msgstr "%s завантажен в пам'ять"
+
+msgid "not loaded modules"
+msgstr "нема завантажених модулів"
+
+msgid "System Tools 2"
+msgstr "Системні утиліти 2"
+
+msgid "cache flush"
+msgstr "звільненя кеш"
+
+msgid "Cache Flush"
+msgstr "Звільненя Кеш"
+
+msgid "Flush Now"
+msgstr "звільнити"
+
+msgid "Autotime cache flush"
+msgstr "Періодичність звільненя кеш"
+
+msgid "Set cache flush mode"
+msgstr "Режим звільненя кеш"
+
+msgid "Buffers: %s Kb  Cached: %s Kb"
+msgstr "Буфери: %s Kb  Кеш: %s Kb"
+
+msgid "Cache flushed"
+msgstr "Кеш звільнено"
+
+msgid "free pagecache, dentries and inodes"
+msgstr "звільненя pagecache, dentries та inodes"
+
+msgid "free pagecache"
+msgstr "звільненя pagecache"
+
+msgid "free dentries and inodes"
+msgstr "звільненя dentries та inodes"
+
+msgid "Show E-Flash Cache in ExtensionMenu"
+msgstr "Показати E-Звільненя Кеш в розширеному меню"
+
+msgid "E-Flush cache"
+msgstr "E-Панель звільненя кеш"
+
+msgid "drop system cache"
+msgstr "звільненя системного кеш"
+
+msgid "Total: %s Kb  Free: %s Kb (%s %%)"
+msgstr "Всього: %s Kb  Вільно: %s Kb (%s %%)"
