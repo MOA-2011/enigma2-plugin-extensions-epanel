@@ -351,6 +351,20 @@ config.plugins.epanel.dropmode = ConfigSelection(default = '1', choices = [
 		('2', _("free dentries and inodes")),
 		('3', _("free pagecache, dentries and inodes")),
 		])
+config.plugins.epanel.dnsserver = ConfigSelection(default = '1', choices = [
+		('1', _("no-ip.com")),
+		('2', _("changeip.com")),
+		])
+config.plugins.epanel.dnsuser = ConfigText(default="xxxxx", visible_width = 70, fixed_size = False)
+config.plugins.epanel.dnspass = ConfigText(default="*****", visible_width = 70, fixed_size = False)
+config.plugins.epanel.dnshost = ConfigText(default="xxx.xxx.xxx", visible_width = 70, fixed_size = False)
+config.plugins.epanel.dnstime = ConfigSelection(default = '0', choices = [
+		('0', _("Off")),
+		('1', _("60 min")),
+		('2', _("120 min")),
+		('3', _("180 min")),
+		])
+		
 config.plugins.epanel.autobackup = ConfigYesNo(default = False)
 config.plugins.epanel.checkepgfile = ConfigYesNo(default = False)
 config.plugins.epanel.e2shpatch = ConfigSelection(default = "no", choices = [
@@ -453,7 +467,7 @@ class ToolsScreen2(Screen):
 			elif item is 5:
 				self.session.open(NTPScreen)
 			elif item is 6:
-				self.session.open(ScriptScreen2)
+				self.session.open(ScriptScreen3)
 			else:
 				self.close(None)
 ######################################################################################
@@ -506,8 +520,8 @@ class ServiceMan(Screen):
 		self.list.append((_("Manage Syslog/klogd service"), "syslog.busybox"))
 		self.list.append((_("Manage Dropbear SSH service"), "dropbear"))
 		self.list.append((_("Manage BusyBox-Cron service"), "busybox-cron"))
-		if fileExists('/etc/init.d/udpxy.sh') and fileExists('/usr/bin/udpxy'):
-			self.list.append((_("Manage UdPrxy service"), "udpxy.sh"))
+		if fileExists('/etc/init.d/udpxy') and fileExists('/usr/bin/udpxy'):
+			self.list.append((_("Manage Udpxy service"), "udpxy"))
 		if fileExists('/etc/init.d/livestreamersrv'):
 			self.list.append((_("Manage Livestreamer service"), "livestreamersrv"))
 		self["menu"].setList(self.list)
@@ -897,13 +911,17 @@ class UsbScreen(Screen):
 	def exit(self):
 		self.close()
 ######################################################################################
-class ScriptScreen2(Screen):
+class ScriptScreen3(Screen):
 	skin = """
-	<screen name="ScriptScreen2" position="center,160" size="750,370" title="Script Executer" >
-		<widget name="list" position="20,10" size="710,305" scrollbarMode="showOnDemand" />
-		<ePixmap position="20,358" zPosition="1" size="170,2" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/epanel/images/red.png" alphatest="blend" />
-		<widget source="key_red" render="Label" position="20,328" zPosition="2" size="170,30" font="Regular;20" halign="center" valign="center" backgroundColor="background" foregroundColor="foreground" transparent="1" />
-	</screen>"""
+	<screen name="ScriptScreen3" position="center,160" size="750,370" title="Script Executer">
+  <widget name="list" position="20,10" size="710,305" scrollbarMode="showOnDemand" />
+  <ePixmap position="20,358" zPosition="1" size="170,2" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/epanel/images/red.png" alphatest="blend" />
+  <widget source="key_red" render="Label" position="20,328" zPosition="2" size="170,30" font="Regular;20" halign="center" valign="center" backgroundColor="background" foregroundColor="foreground" transparent="1" />
+  <ePixmap position="190,358" zPosition="1" size="170,2" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/epanel/images/green.png" alphatest="blend" />
+  <widget source="key_green" render="Label" position="190,328" zPosition="2" size="170,30" font="Regular;20" halign="center" valign="center" backgroundColor="background" foregroundColor="foreground" transparent="1" />
+<ePixmap position="360,358" zPosition="1" size="170,2" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/epanel/images/yellow.png" alphatest="blend" />
+  <widget source="key_yellow" render="Label" position="360,328" zPosition="2" size="170,30" font="Regular;20" halign="center" valign="center" backgroundColor="background" foregroundColor="foreground" transparent="1" />
+</screen>"""
 
 	def __init__(self, session):
 		Screen.__init__(self, session)
@@ -913,7 +931,9 @@ class ScriptScreen2(Screen):
 		self.iConsole = iConsole()
 		self.scrpit_menu()
 		self["key_red"] = StaticText(_("Close"))
-		self["actions"] = ActionMap(["OkCancelActions","ColorActions"], {"ok": self.run, "red": self.exit, "cancel": self.close}, -1)
+		self["key_green"] = StaticText(_("Run"))
+		self["key_yellow"] = StaticText(_("ShadowRun"))
+		self["actions"] = ActionMap(["OkCancelActions","ColorActions"], {"ok": self.run, "green": self.run, "yellow": self.shadowrun, "red": self.exit, "cancel": self.close}, -1)
 		
 	def scrpit_menu(self):
 		list = []
@@ -924,14 +944,20 @@ class ScriptScreen2(Screen):
 			list = []
 		list.sort()
 		self["list"] = MenuList(list)
-		
+	
+	def shadowrun(self):
+		self.script = self["list"].getCurrent()
+		if self.script is not None:
+			self.name = "%s%s.sh" % (config.plugins.epanel.scriptpath.value, self.script)
+			os.chmod('%s' %  self.name, 0755)
+			self.iConsole.ePopen("nohup %s >/dev/null &" %  self.name)
+			self.mbox = self.session.open(MessageBox,(_("the script is running in the background...")), MessageBox.TYPE_INFO, timeout = 4 )
+
 	def run(self):
 		self.script = self["list"].getCurrent()
 		if self.script is not None:
 			self.name = "%s%s.sh" % (config.plugins.epanel.scriptpath.value, self.script)
-			self.iConsole.ePopen("chmod 777 %s.sh" %  self.name, self.runScript)
-			
-	def runScript(self, result, retval, extra_args):
+			os.chmod('%s' %  self.name, 0755)
 			self.session.open(Console, self.script.replace("_", " "), cmdlist=[self.name])
 
 	def exit(self):
@@ -1572,8 +1598,8 @@ class get_epg_data(Screen):
 		if config.plugins.epanel.direct_source.value is '0':
 			self.iConsole.ePopen("wget -q 'http://linux-sat.tv/epg/epg_%s.dat.gz' -O %sepg.dat.gz" % (config.plugins.epanel.lang.value, config.plugins.epanel.direct.value), self.remove_epgfile)
 		else:
-			self.iConsole.ePopen("wget -q 'http://piconload.ru/upload/epg/epg_new.dat.gz' -O %sepg.dat.gz" % config.plugins.epanel.direct.value, self.remove_epgfile)
-		
+			self.iConsole.ePopen("wget -q 'http://piconload.ru/upload/epg/666/epg_new.dat.gz' -O %sepg.dat.gz" % config.plugins.epanel.direct.value, self.remove_epgfile)
+
 	def remove_epgfile(self, result, retval, extra_args):
 		if retval is 0:
 			self.iConsole.ePopen("mkdir -p %sepgtmp && rm -f %sepg.dat" % \
@@ -1671,7 +1697,7 @@ class epgdn(ConfigListScreen, Screen):
 	def image_is_OA(self):
 		if fileExists("/etc/issue"):
 			for line in open("/etc/issue"):
-				if 'openatv' in line or 'openhdf' in line or 'openvix' in line:
+				if 'openatv' in line or 'openhdf' in line or 'openvix' in line.lower():
 					return True
 		return False
 
@@ -2172,7 +2198,9 @@ class System2Screen(Screen):
 	def mList(self):
 		self.list = []
 		onepng = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/epanel/images/drop.png"))
+		twopng = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/epanel/images/ddns.png"))
 		self.list.append((_("Cache Flush"), 1, _("free pagecache, dentries and inodes"), onepng))
+		self.list.append((_("Dynamic DNS"), 2, _("synchronization settings DDNS"), twopng))
 		if self.indexpos != None:
 			self["menu"].setIndex(self.indexpos)
 		self["menu"].setList(self.list)
@@ -2199,8 +2227,100 @@ class System2Screen(Screen):
 		if item:
 			if item is 1:
 				self.session.open(DropScreen)
+			elif item is 2:
+				self.session.open(DDNSScreen)
 			else:
 				self.close(None)
+######################################################################################
+class DDNSScreen(ConfigListScreen, Screen):
+	skin = """
+<screen name="DropScreen" position="center,160" size="750,370" title="Dynamic DNS">
+	<widget position="15,10" size="720,200" name="config" scrollbarMode="showOnDemand" />
+	<ePixmap position="10,358" zPosition="1" size="165,2" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/epanel/images/red.png" alphatest="blend" />
+	<widget source="key_red" render="Label" position="10,328" zPosition="2" size="165,30" font="Regular;20" halign="center" valign="center" backgroundColor="background" foregroundColor="foreground" transparent="1" />
+	<ePixmap position="175,358" zPosition="1" size="165,2" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/epanel/images/green.png" alphatest="blend" />
+	<widget source="key_green" render="Label" position="175,328" zPosition="2" size="165,30" font="Regular;20" halign="center" valign="center" backgroundColor="background" foregroundColor="foreground" transparent="1" />
+	<ePixmap position="340,358" zPosition="1" size="195,2" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/epanel/images/yellow.png" alphatest="blend" />
+	<widget source="key_yellow" render="Label" position="340,328" zPosition="2" size="195,30" font="Regular;20" halign="center" valign="center" backgroundColor="background" foregroundColor="foreground" transparent="1" />
+</screen>"""
+
+	def __init__(self, session):
+		self.session = session
+		Screen.__init__(self, session)
+		self.list = []
+		self.iConsole = iConsole()
+		self.path = cronpath()
+		self["key_red"] = StaticText(_("Close"))
+		self["key_green"] = StaticText(_("Save"))
+		self["key_yellow"] = StaticText(_("Update Now"))
+		self["setupActions"] = ActionMap(["SetupActions", "ColorActions", "EPGSelectActions"],
+		{
+			"red": self.cancel,
+			"cancel": self.cancel,
+			"green": self.save_values,
+			"yellow": self.UpdateNow,
+			"ok": self.save_values
+		}, -2)
+		self.list.append(getConfigListEntry(_("Select DDNS server"), config.plugins.epanel.dnsserver))
+		self.list.append(getConfigListEntry(_("Username"), config.plugins.epanel.dnsuser))
+		self.list.append(getConfigListEntry(_("Password"), config.plugins.epanel.dnspass))
+		self.list.append(getConfigListEntry(_("Hostname"), config.plugins.epanel.dnshost))
+		self.list.append(getConfigListEntry(_("Update Time"), config.plugins.epanel.dnstime))
+		ConfigListScreen.__init__(self, self.list)
+		self.onShow.append(self.Title)
+		
+	def Title(self):
+		self.setTitle(_("Dynamic DNS"))
+
+	def cancel(self):
+		for i in self["config"].list:
+			i[1].cancel()
+		self.close()
+
+	def save_values(self):
+		if not fileExists(self.path):
+			open(self.path, 'a').close()
+		for i in self["config"].list:
+			i[1].save()
+		configfile.save()
+		if fileExists(self.path):
+			remove_line(self.path, 'no-ip.py')
+		if config.plugins.epanel.dnstime.value is not '0':
+			self.cron_setup()
+			self.create_script()
+		self.mbox = self.session.open(MessageBox,(_("configuration is saved")), MessageBox.TYPE_INFO, timeout = 4 )
+		
+	def create_script(self):
+		updatestr = ''
+		#if config.plugins.epanel.dnstime.value is not '0':
+		if config.plugins.epanel.dnsserver.value is '1':
+			updatestr = "http://%s:%s@dynupdate.no-ip.com/nic/update?hostname=%s" % (config.plugins.epanel.dnsuser.value, config.plugins.epanel.dnspass.value, config.plugins.epanel.dnshost.value)
+		else:
+			updatestr = "https://%s:%s@nic.changeip.com/nic/update?cmd=update&set=$CIPSET&hostname=%s" % (config.plugins.epanel.dnsuser.value, config.plugins.epanel.dnspass.value, config.plugins.epanel.dnshost.value)
+		with open('/usr/lib/enigma2/python/Plugins/Extensions/epanel/no-ip.py', 'w') as update_script:
+			update_script.write('#!/usr/bin/env python\n# -*- coding: utf-8 -*-\n# Copyright (c) 2boom 2014\n\n')
+			update_script.write('import requests\n\n')
+			update_script.write('res = requests.get("%s")\n' % updatestr)
+			update_script.write('print res.text\n')
+			update_script.close()
+
+	def cron_setup(self):
+		if config.plugins.epanel.dnstime.value is not '0':
+			with open(self.path, 'a') as cron_root:
+				cron_root.write('1 */%s * * * python /usr/lib/enigma2/python/Plugins/Extensions/epanel/no-ip.py\n' % config.plugins.epanel.dnstime.value)
+				cron_root.close()
+			with open('%scron.update' % self.path[:-4], 'w') as cron_update:
+				cron_update.write('root')
+				cron_update.close()
+
+	def UpdateNow(self):
+		if not fileExists('/usr/lib/enigma2/python/Plugins/Extensions/epanel/no-ip.py'):
+			self.create_script()
+		if fileExists('/usr/lib/enigma2/python/Plugins/Extensions/epanel/no-ip.py'):
+			self.session.open(Console, title = _("DNS updating..."), cmdlist = ["python /usr/lib/enigma2/python/Plugins/Extensions/epanel/no-ip.py"], closeOnSuccess = False)
+		else:
+			self.mbox = self.session.open(MessageBox,(_("update script not found...")), MessageBox.TYPE_INFO, timeout = 4 )
+
 ######################################################################################
 class DropScreen(ConfigListScreen, Screen):
 	skin = """

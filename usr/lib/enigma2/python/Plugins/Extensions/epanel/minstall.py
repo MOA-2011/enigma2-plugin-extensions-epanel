@@ -193,17 +193,23 @@ class downfeed(Screen):
 	
 	def feedlist(self):
 		self.list = []
-		pkg_name, pkg_desc = ' ', ' '
+		statuspath = ''
+		pkg_name = pkg_desc = ' '
 		png = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/epanel/images/ipkmini.png"))
 		list = os.listdir(self.path[:-7])
+		if len(list) < 5:
+			list = os.listdir(self.path[:-7] + '/lists')
+			statuspath = self.path[:-6] + 'lists/'
+		else:
+			statuspath = self.path[:-6]
 		for file in list:
-			if os.path.isfile(self.path[:-6] + file):
+			if os.path.isfile(statuspath + file):
 				if not file is 'status':
-					for line in open(self.path[:-6] + file):
+					for line in open(statuspath + file):
 						if 'Package:' in line and '-dev' not in line:
 							pkg_name = line.split(':')[1]
 						elif 'Description:' in line:
-							pkg_desc = line.split(':')[1]
+							pkg_desc = line.split(':')[1].replace('"', '')
 							if config.plugins.epanel.filtername.value:
 								if "enigma2-plugin-" in pkg_name:
 									self.list.append((pkg_name, pkg_desc, png))
@@ -269,16 +275,22 @@ class DownloadFeed(Screen):
 	def feedlist(self):
 		self.list = []
 		pkg_name = pkg_desc = ' '
+		statuspath = ''
 		png = LoadPixmap(cached=True, path=resolveFilename(SCOPE_PLUGINS, "Extensions/epanel/images/ipkmini.png"))
 		list = os.listdir(self.path[:-7])
+		if len(list) < 5:
+			list = os.listdir(self.path[:-7] + '/lists')
+			statuspath = self.path[:-6] + 'lists/'
+		else:
+			statuspath = self.path[:-6]
 		for file in list:
-			if os.path.isfile(self.path[:-6] + file):
+			if os.path.isfile(statuspath + file):
 				if not file is 'status':
-					for line in open(self.path[:-6] + file):
-						if 'Package:' in line:
+					for line in open(statuspath + file):
+						if 'Package:' in line and '-dev' not in line:
 							pkg_name = line.split(':')[1]
 						elif 'Description:' in line:
-							pkg_desc = line.split(':')[1]
+							pkg_desc = line.split(':')[1].replace('"', '')
 							if config.plugins.epanel.filtername.value:
 								if "enigma2-plugin-" in pkg_name:
 									self.list.append((pkg_name, pkg_desc, png))

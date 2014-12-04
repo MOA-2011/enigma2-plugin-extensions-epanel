@@ -223,14 +223,23 @@ class emuSel5(Screen):
 			except:
 				emuname = ' '
 		return emuname
+		
+	def cut_name(self, what):
+		count = 0
+		what = what.replace('_', ' ').replace('-', ' ')
+		count = len(what.split())
+		if count <= 1:
+			return what
+		else:
+			return what.split()[0]
 
 	def name_in_memory(self):
 		self.iConsole.ePopen("ps", self.stdout_find)
 
 	def stdout_find(self, result, retval, extra_args):
 		status = ''
-		name_emu = self.emuversion('softcam')
-		name_card = self.emuversion('cardserver')
+		name_emu = self.cut_name(self.emuversion('softcam'))
+		name_card = self.cut_name(self.emuversion('cardserver'))
 		if name_card is not ' ':
 			for line in result.splitlines(True):
 				if name_card.split()[0].upper() in result.upper():

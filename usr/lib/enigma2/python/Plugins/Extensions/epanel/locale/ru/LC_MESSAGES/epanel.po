@@ -1372,8 +1372,8 @@ msgstr "Успешно..."
 msgid "Restore EPG with enigma2 start"
 msgstr "Востанавить EPG при старте enigma2"
 
-msgid "Manage UdPrxy service"
-msgstr "Управление сервисом UdPrxy"
+msgid "Manage Udpxy service"
+msgstr "Управление сервисом Udrxy"
 
 msgid "Manage Livestreamer service"
 msgstr "Управление сервисом Livestreamer"
@@ -1389,9 +1389,6 @@ msgstr "нет загруженных модулей"
 
 msgid "System Tools 2"
 msgstr "Системные утилиты 2"
-
-msgid "cache flush"
-msgstr "очистка кеш"
 
 msgid "Cache Flush"
 msgstr "Очистка Кеш"
@@ -1432,5 +1429,54 @@ msgstr "очистка системного кеш"
 msgid "Total: %s Kb  Free: %s Kb (%s %%)"
 msgstr "Всего: %s Kb  Свободно: %s Kb (%s %%)"
 
+msgid "%s, %s Mhz (%d %s)"
+msgstr "%s, %s МГц (%d %s)"
 
+msgid "Processor:"
+msgstr "Процессор:"
+
+msgid "core"
+msgstr "ядро"
+
+msgid "cores"
+msgstr "ядра"
+
+msgid "Dynamic DNS"
+msgstr "Динамический DNS"
+
+msgid "synchronization settings DDNS"
+msgstr "настройка синхронизации DDNS"
+
+msgid "Select DDNS server"
+msgstr "Выберите DDNS сервер"
+
+msgid "Username"
+msgstr "Имя пользователя"
+
+msgid "Hostname"
+msgstr "Имя хоста"
+
+msgid "Update Time"
+msgstr "Переодичность обновления"
+
+msgid "DNS updating..."
+msgstr "обновление DNS..."
+
+msgid "cache flush, DDNS sync"
+msgstr "очистка кеш, синхронизация DDNS"
+
+msgid "E-Panel Universal Switcher"
+msgstr "Универсальный переключатель"
+
+msgid "update script not found..."
+msgstr "скрипт обновления не найден..."
+
+msgid "Run"
+msgstr "Запуск"
+
+msgid "ShadowRun"
+msgstr "Запуск в фоне"
+
+msgid "the script is running in the background..."
+msgstr "Запуск выполняется в фоновом режиме"
 
